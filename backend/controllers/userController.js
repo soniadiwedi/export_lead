@@ -25,7 +25,7 @@ exports.getLead=async(req,res)=>{
 
 exports.exportLead=async(req,res)=>{
   try{
-    let lead=[]
+    let lead=[];
     let data=await Lead.find({})
     data.forEach((el)=>{
       const{id,name,email,address}=el
